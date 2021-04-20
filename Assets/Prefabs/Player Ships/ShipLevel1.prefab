@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4912916163812739388}
   m_Layer: 0
   m_Name: Engine
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9782,7 +9782,7 @@ GameObject:
   - component: {fileID: 3777463793701809449}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9813,10 +9813,10 @@ GameObject:
   - component: {fileID: 3779364957687377493}
   - component: {fileID: 3748308249736615133}
   - component: {fileID: 3760407211365519477}
-  - component: {fileID: 5901540030811117478}
+  - component: {fileID: 377487613}
   m_Layer: 0
   m_Name: ShipLevel1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9830,7 +9830,7 @@ Transform:
   m_GameObject: {fileID: 3781485659294044759}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 8.91, y: 13.33, z: -39.07}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 3777463793701809449}
   - {fileID: 5686644556142705379}
@@ -9865,7 +9865,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 020568ce6bb9b3245a24630d5282ca24, type: 2}
+  - {fileID: 2100000, guid: ca28c97d23f98024fb31e22662eb58e7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9887,7 +9887,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5901540030811117478
+--- !u!114 &377487613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9896,11 +9896,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3781485659294044759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f36bb360669b0a545b93ce92d3d0abe9, type: 3}
+  m_Script: {fileID: 11500000, guid: 80f745eb74288aa4c92eb1cd4d54d79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 2
-  projectileObject: {fileID: 1413877261856170, guid: 7120694aa5e8a9d4a88b1e61228dabb0,
+  projectileObject: {fileID: 6733157976211419439, guid: c7cf2992802c09b4bbebcb2e0c074ddc,
     type: 3}
   nextFire: 0
   weaponPower: 2
@@ -9922,6 +9922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3779252214357956201}
   - component: {fileID: 3788828806175675527}
+  - component: {fileID: 63137744}
   m_Layer: 0
   m_Name: Collider1
   m_TagString: Untagged
@@ -9951,11 +9952,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3782901508158140869}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 6.132853, y: 1.5240965, z: 10.618968}
   m_Center: {x: 0.041383505, y: -0.18791133, z: 0.8094847}
+--- !u!54 &63137744
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782901508158140869}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5192037996425879568
 GameObject:
   m_ObjectHideFlags: 0
@@ -9967,7 +9984,7 @@ GameObject:
   - component: {fileID: 5686644556142705379}
   m_Layer: 0
   m_Name: Guns
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

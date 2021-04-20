@@ -9,6 +9,8 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+
+
     public GameObject destructionFX;
 
     public static Player instance; 
