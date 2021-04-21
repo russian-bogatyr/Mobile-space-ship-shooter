@@ -194,7 +194,7 @@ MonoBehaviour:
   destructionFX: {fileID: 1587261729604890, guid: 600ec83cba1cec448bf41a6607229741,
     type: 3}
   playerHealth: 3
-  shipHealth: 9
+  shipHealth: 3
   bonusHealth: 3
   maxPlayerHealth: 0
 --- !u!1 &160092390
@@ -550,6 +550,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187258288001765329, guid: bc9b245301477194385b15d8e016e6c7,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 9.257393
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187258288001765329, guid: bc9b245301477194385b15d8e016e6c7,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 8.459312
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187258288001765329, guid: bc9b245301477194385b15d8e016e6c7,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.024540901
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187258288001765329, guid: bc9b245301477194385b15d8e016e6c7,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -8.270344
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7070858745890321314, guid: bc9b245301477194385b15d8e016e6c7, type: 3}
