@@ -40,7 +40,7 @@ public class MyPlayerShooting : MonoBehaviour
         //receiving shooting visual effects components
         guns.leftGunVFX = guns.leftGun.GetComponent<ParticleSystem>();
         guns.rightGunVFX = guns.rightGun.GetComponent<ParticleSystem>();
-        guns.centralGunVFX = guns.centralGun.GetComponent<ParticleSystem>();
+        //guns.centralGunVFX = guns.centralGun.GetComponent<ParticleSystem>();
     }
 
     private void Update()

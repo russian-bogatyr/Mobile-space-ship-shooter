@@ -47,7 +47,7 @@ public class MyGameController : MonoBehaviour
         {
             if (delay != 0)
                 yield return new WaitForSeconds(delay);
-            if (Player.instance != null)
+            if (MyPlayer.instance != null)
                 Instantiate(Wave);
         }
 
